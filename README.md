@@ -46,6 +46,7 @@ The project structure is organized as follows:
   - `ProductServiceImpl.java`: Implementation of the product service
   - `CheckoutService.java`: Service for calculating total prices and simulating payment processing
 - `pom.xml`: Maven project configuration file
+- `.project/`: Virtual environment directory
 
 ## Getting Started
 
@@ -53,14 +54,24 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository (if you haven't already):
 
+         git clone https://github.com/Akshayknchalapalli/ecommerce-system-java.git
+2. Create a virtual environment (recommended) to isolate project dependencies:
 
-    git clone https://github.com/Akshayknchalapalli/ecommerce-system-java.git
+        python -m venv .project  # On Windows
+        
+        python3 -m venv .project  # On macOS and Linux
+        
+- Activate the virtual environment:
+
+        .project\Scripts\activate # On Windows
+        
+        source .project/bin/activate # On macOS and Linux
    
-2. Navigate to the project directory:
+3. Navigate to the project directory:
 
         cd ecommerce-system
    
-3. Build the project using Maven:
+4. Build the project using Maven:
 
         mvn clean install      
 ## Usage
